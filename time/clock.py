@@ -47,3 +47,22 @@ class Clock:
 
 
     def GetdATfromGregorian(self, gregorian):
+
+    def GMST(self, gregorian):
+        c_ut1 = self.UTCGregotianToTUT1(gregorian)
+        GMST = (
+            67310.54841
+            + (3155760000 + 8640184.812866) * c_ut1
+            + 0.093104 * (c_ut1**2)
+            - 0.0000062 * (c_ut1**3)
+        ) % 86400
+        GMST = GMST / 240
+        if GMST < 0:
+            GMST = 360 - GMST
+        return GMST
+
+
+    def LSTime(self, gregorian, lamda):
+        GMST = self.GMST(gregorian)
+        LST = GMST + lamda
+        return LST
