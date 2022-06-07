@@ -1,4 +1,4 @@
-# The Earth's Magnetic Field
+# The Earth's Magnetic Field (Beta test)
 
 ## 1. The Main Field
 
