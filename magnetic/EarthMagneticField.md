@@ -6,4 +6,4 @@ The Eath's magnetic field is predominantly that of a magnetic dipole such as tha
 
 The plane perpendicular to the Earth-centered dipole is called the magnetic equator.
 
-![Magnetic Equator](acsanalysis/imige/Magneticequator.jpg)
+![Magnetic Equator](acsanalysis\imige\Magneticequator.jpg)
