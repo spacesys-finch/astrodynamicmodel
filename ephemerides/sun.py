@@ -1,7 +1,7 @@
 import numpy as np
-from acstoolbox.constants.celestial_constants import *
-from acstoolbox.constants.time_constants import *
-from acstoolbox.ephemerides import astrodynamics
+from astrodynamicmodel.constants.celestial_constants import *
+from astrodynamicmodel.constants.time_constants import *
+from astrodynamicmodel.ephemerides import astrodynamics
 
 
 def Wrap(deg):
@@ -78,7 +78,7 @@ class Sun:
     # -----------------------------------------------------------------------
     def GetUnitMODPositionFromUTC(self, gregorian_utc):
         """Example Call:
-        clock = acstoolbox.time.clock.Clock()
+        clock = astrodynamicmodel.time.clock.Clock()
         sun = Sun(clock)
         s_mod = sun.GetMODPositionFromUTC(2006, 4, 2, 0, 0, 0)
         """
