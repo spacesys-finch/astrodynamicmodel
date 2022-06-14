@@ -1,6 +1,8 @@
 """ this file will test everything related to time"""
+import sys
+sys.path.append("C:\\Users\\khang\\OneDrive\\Music\\Documents\\ADCS\\simulation")
 
-from adcsanalysis.time.clock import Clock
+from adcsanalysis.time import jdconversion_version2
 
 import numpy as np
 import pytest as pytest
@@ -14,8 +16,9 @@ def test_gregorian_to_julian_date():
     gregorian_j2000 = [2000, 1, 1, 12, 0, 0]
 
     # Initialize clock and convert Gregorian date.
-    clock = Clock()
-    assert clock.GregorianToJulianDate(gregorian_j2000) == JD_J2000
+
+    time = jdconversion_version2.GregorianToJulianDate(gregorian_j2000)
+    print(time)
 
 def test_LST():
     clock = Clock()
@@ -27,3 +30,6 @@ def test_LST():
     LST_test = 48.578787886
     # test
     assert LST == pytest.approx(LST_test, 1e-2)
+
+if __name__ == "__main__":
+    test_gregorian_to_julian_date()
