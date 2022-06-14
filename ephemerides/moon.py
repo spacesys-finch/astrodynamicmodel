@@ -3,12 +3,12 @@
 # Standard packages.
 import numpy as np
 
-# ACSToolbox packages.
-from acstoolbox.ephemerides import astrodynamics
-from acstoolbox.constants.celestial_constants import *
-from acstoolbox.constants.time_constants import *
-from acstoolbox.time.clock import Clock
-from acstoolbox.ephemerides.sun import Sun
+# astrodynamicmodel packages.
+from astrodynamicmodel.ephemerides import astrodynamics
+from astrodynamicmodel.constants.celestial_constants import *
+from astrodynamicmodel.constants.time_constants import *
+from astrodynamicmodel.time.clock import Clock
+from astrodynamicmodel.ephemerides.sun import Sun
 
 
 class Moon:
