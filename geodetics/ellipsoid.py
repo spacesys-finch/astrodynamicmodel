@@ -1,7 +1,8 @@
 """ This program will Determining Site Components"""
 
 # acstoolbox packages.
-from acstoolbox.constants.celestial_constants import *
+from 
+astrodynamicmodel.constants.celestial_constants import *
 
 # Standard packages.
 import numpy as np
