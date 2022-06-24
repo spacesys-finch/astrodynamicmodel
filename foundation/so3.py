@@ -7,7 +7,8 @@ These special orthogonal matrices are the foundation for all attitude representa
 import numpy as np
 
 # ACSToolbox packages.
-from acstoolbox.foundation.math import is_column, vX
+from 
+astrodynamicmodel.foundation.math import is_column, vX
 
 
 def AxisAngle(a, phi):
