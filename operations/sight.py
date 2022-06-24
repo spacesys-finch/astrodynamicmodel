@@ -6,8 +6,10 @@
 import numpy as np
 
 # ACSToolbox packages.
-from acstoolbox.ephemerides.sun import Sun
-from acstoolbox.time.clock import Clock
+from 
+astrodynamicmodel.ephemerides.sun import Sun
+from 
+astrodynamicmodel.time.clock import Clock
 
 
 def VectortoScalar(r):
