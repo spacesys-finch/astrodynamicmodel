@@ -1,8 +1,8 @@
 """ this file will test everything related to time"""
-import sys
-sys.path.append("C:\\Users\\khang\\OneDrive\\Music\\Documents\\ADCS\\simulation")
 
-from adcsanalysis.time import jdconversion_version2
+
+from 
+astrodynamicmodel.time import jdconversion_version2
 
 import numpy as np
 import pytest as pytest
