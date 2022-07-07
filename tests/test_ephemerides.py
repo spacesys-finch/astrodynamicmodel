@@ -1,7 +1,7 @@
 # ACSToolbox packages.
-from acstoolbox.time.clock import Clock
-from acstoolbox.ephemerides.sun import Sun
-from acstoolbox.ephemerides.moon import Moon
+from astrodynamicmodel.time.clock import Clock
+from astrodynamicmodel.ephemerides.sun import Sun
+from astrodynamicmodel.ephemerides.moon import Moon
 
 # Standard packages.
 import numpy as np
