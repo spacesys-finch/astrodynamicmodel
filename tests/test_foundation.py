@@ -8,6 +8,7 @@ import pytest as pytest
 # ACSToolbox packages.
 from acstoolbox.foundation import math
 from acstoolbox.foundation import so3
+from acstoolbox.foundation import conversion
 
 # 1. so3.AxisAngle
 def test_so3_euler_axis_rotation():
@@ -80,3 +81,27 @@ def test_so3_C():
     except AssertionError:
         print("Exception caught constructing principal rotation")
         # raise
+
+
+# 3. test Spherical to Cartesian
+def test_spherical_to_cartesian():
+
+    # use a spherical coordinate value
+    spherical = np.array([5, 2.45, 3.14])
+    cartessian = conversion.SphericaltoCartesian(spherical)
+
+    # cartesian coordinate
+    cartesian_test = [-3.18881947, 0.00507869, -3.85115627]
+    assert np.allclose(cartessian, cartesian_test)
+
+
+# 4. test Cartesian to Spherical
+def test_cartesian_to_spherical():
+
+    # cartesian coordinate value
+    cartesian = np.array([1, 2, 3])
+    spherical = conversion.CartesiantoSpherical(cartesian)
+
+    # spherical coordinate test
+    spherical_test = [3.74165739, 0.64052231, 1.10714872]
+    assert np.allclose(spherical, spherical_test)
